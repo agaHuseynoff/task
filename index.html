@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Task</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="logo-vk">
+            <a href="https://vk.com" target="_blank">
+                <img src="./images/vk_logo.svg" alt="vk-logo" />
+            </a>
+        </div>
+
+        <div class="search-box">
+            <h4>искать пользователей vk</h4>
+            <div class="form-box">
+                <h2>поиск по дата рождения</h2>
+
+                <div class="d-flex">
+                    <div class="item">
+                        <input type="number" placeholder="месяц" id="month" name="month" class="elements">
+                    </div>
+
+                    <div class="item">
+                        <input type="number" placeholder="день" id="day" name="day" class="elements" />
+                    </div>
+
+                    <div class="item">
+                        <input type="number" placeholder="год" id="year" name="year" class="elements" />
+                    </div>
+
+                    <div class="item btn">
+                        <button id="btn" disabled='disabled' onclick="xmlHttreq()">Поиск</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="users">
+            <ul></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script/script.js"></script>
+
+
+</body>
+
+</html>
